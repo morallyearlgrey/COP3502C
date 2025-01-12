@@ -67,12 +67,15 @@ int main() {
     scanf("%d", &size);
 
     // DYNAMIC MEMORY ALLOCATION
-    /*
-    
-    */
     int * test = malloc(sizeof(int)*10); // Requires bytes in parameter, makes test point to a space in the heap space with 40 bytes
     test[0] = 7;
-
+    int * test2 = calloc(10, sizeof(int)); // Allocates to an arr ptr with size 10 and sizeof(int) for each element; Everything in the array is initialized to 0
+    // Sometimes, in old compilers, casting for ptrs to arrs is required bc a void ptr is returned and the compiler doesn't know what type of arr it is
+    // Example of casting:
+    int * test3 = (int*) calloc(10, sizeof(int));
+    free(test);
+    free(test2);
+    free(test3);
 
     return 0;
 
