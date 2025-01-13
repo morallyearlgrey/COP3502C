@@ -9,6 +9,7 @@ MEMORY STORAGE:
 - For instance, the int will take up 4 addresses (4 byte rows) but it selects the first of the four to showcase when printed 
 
 */
+// sjidhwfueyd
 
 #include <stdio.h>
 #include <string.h>
