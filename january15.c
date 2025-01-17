@@ -47,6 +47,8 @@ park** createArrayofNPPtr(int n, char names[][50])
 {
     park ** p = malloc(n*sizeof(park));
     // continue later (,:
+    // did not continue later
+
 
 }
 
