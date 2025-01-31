@@ -176,7 +176,9 @@ node * deleteIndex(node * root, int index) {
 
     node * temp = cur;
     cur = cur->next;
+    node * del = cur;
     temp->next = cur->next;
+    free(del);
     return root;
 
 }
@@ -208,7 +210,9 @@ node * deletePlace(node * root, int index) {
 
     node * temp = cur;
     cur = cur->next;
+    node * del = cur;
     temp->next = cur->next;
+    free(del);
     return root;
 
 }
