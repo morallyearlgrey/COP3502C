@@ -48,6 +48,7 @@ RECURSIVE TREES
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <stdlib.h>
 
 // forwards rec
 void forwards(int x) {
