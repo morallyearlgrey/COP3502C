@@ -48,6 +48,7 @@ RECURSIVE TREES
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <stdlib.h>
 
 // forwards rec
 void forwards(int x) {
@@ -161,7 +162,7 @@ void exchange(char * string, int i, int j) {
 // combinations of words
 void perm(char * string, int i) {
     // base case
-    if(i==((int)strlen(string))) {
+    if(i==(strlen(string))) {
         printf("%s\n", string);
         return;
 
@@ -236,7 +237,7 @@ int main() {
     printf("\n");
 
     printf("Permutations 1:\n");
-    perm(string, 0);
+    perm(string, 1);
 
 
 }

@@ -40,10 +40,10 @@ int recursiveBinSearch(int * list, int low, int high, int item) {
     if(low<=high) {
         int mid=(low+high)/2;
         if(item < list[mid]) {
-            recursiveBinSearch(list, low, mid-1, item);
+            recursiveBinSearch(list, low, mid+1, item);
 
         } else if(item > list[mid]) {
-            recursiveBinSearch(list, low+1, high, item);
+            recursiveBinSearch(list, mid-1, high, item);
 
         } else {
             return mid;
