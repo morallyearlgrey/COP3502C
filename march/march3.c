@@ -64,6 +64,7 @@ void merge(int * arr, int left, int mid, int right) {
 
     }
 
+    // 
     while(i<sizeLeft) {
         arr[k]=L[i];
         i++;
@@ -88,7 +89,7 @@ void mergeSort(int * arr, int left, int right) {
 
     if(left<right) {
         int mid = (left+right)/2;
-        mergeSort(arr,left, right);
+        mergeSort(arr,left, mid);
         mergeSort(arr, mid+1, right);
         merge(arr, left, mid, right);
     }
